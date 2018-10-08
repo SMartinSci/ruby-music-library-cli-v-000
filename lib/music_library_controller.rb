@@ -1,6 +1,7 @@
 class MusicLibraryController
   attr_reader :path
   
+<<<<<<< HEAD
   def initialize(path = './db/mp3s')
     MusicImporter.new(path).import
   end
@@ -84,4 +85,12 @@ class MusicLibraryController
     
     puts "Playing #{song.name} by #{song.artist.name}" if song
   end
+=======
+  def initialize(path)
+    MusicImporter.new(path).import
+  end
+  
+
+  
+>>>>>>> bf14ce79ed3bd11e2c8a294ebdd58464e3ece504
 end
